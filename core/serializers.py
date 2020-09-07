@@ -6,3 +6,8 @@ class MemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = Member
         fields = ['id', 'name', 'surname', 'phone', 'profile_picture']
+
+class MemberMiniSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Member
+        fields = ['id', 'name',]
